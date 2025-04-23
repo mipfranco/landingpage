@@ -1,11 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=0" />
-    
     <link rel="stylesheet" type="text/css" href="assets/css/template.css" />
+
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        }
+        </script>
+
     <title>Sonare</title>
 </head>
-<body> 
+
+<body>
 
     <header>
         <div class="container">
@@ -14,6 +29,11 @@
             </div>
             <div class="menu">
                 <nav>
+                    <div class="menuMobile">
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                        <div class="mm_line"></div>
+                    </div>
                     <ul>
                         <li class="active"><a href="">HOME</a></li>
                         <li class="active"><a href="">PRODUCTS</a></li>
@@ -30,20 +50,48 @@
         <div class="container column">
             <div class="banner_headline">
                 <div class="textos">
-                <h1>Sonare 30 Max</h1>
-                <h2>Sonare First Head-Tracking Spatial Audio Headphones</h2>
-            </div>
+                    <h1>Sonare 30 Max</h1>
+                    <h2>Sonare First Head-Tracking Spatial Audio Headphones</h2>
+                    <br />
+                    <a href="">Read More</a>
+                </div>
                 <div class="banner_logo">
-                <img src="assets/images/10344523.png">
-            </div>
-            </div>
-
-
+                    <img src="assets/images/phoneblack.png" />
+                </div>
             </div>
         </div>
-
     </section>
 
+    <section>
+        <div id="geral">
+        <div class="container2">
+                <div class="widget">
+                    <div class="widget_title">
+                        <div class="widget_title_text">We Categorize - You Choose</div>
+                    </div>
+                    <div class="widget_body flex">
+                    </div>
+                </div>
+        </div>
+        </div>
     </section>
+
+    <article>
+        <div class="product">
+            <img src="assets/images/earbuds.png" alt="Earbuds">
+            <div class="news_title">Earbuds</div>
+        </div>
+        <div class="product">
+            <img src="assets/images/phoneblack.png" alt="Headphones">
+            <div class="news_title">Headphones</div>
+        </div>
+    </article>
+    
+    
+    
+
+
+    
+
 </body>
 </html>
